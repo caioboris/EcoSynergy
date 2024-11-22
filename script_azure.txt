@@ -1,0 +1,1 @@
+az group create --name ecosynergy --location brazilsouth && az appservice plan create -n planEcosynergy --location brazilsouth -g ecosynergy --sku F1 && az webapp create -g ecosynergy -p planEcosynergy --runtime "DOTNET:8" -n ecosynergy-api
